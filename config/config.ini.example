@@ -1,0 +1,26 @@
+[overlay]
+iconOnly=false
+; Coordinates relative to the selected monitor; -1 centers each axis.
+x=-1
+y=-1
+
+showWhenUnmuted=true
+hideWhenUnavailable=true
+
+; primary or zero-based index from mic-overlay --list-screens.
+screen=primary
+
+; Background opacity: 0.0 through 1.0. Text and icons remain opaque.
+opacity=0.85
+; Background colors in #RRGGBB format.
+mutedColor=#7b202b
+unmutedColor=#166534
+; Logical pixels, 8 through 72.
+fontSize=15
+bold=true
+
+mutedText=MIC MUTED
+unmutedText=MIC ON
+; Available bundled icon names: mic-on, mic-muted.
+mutedIcon=mic-muted
+unmutedIcon=mic-on

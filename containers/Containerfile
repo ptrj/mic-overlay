@@ -1,0 +1,5 @@
+FROM docker.io/library/archlinux:latest
+RUN pacman -Syu --noconfirm --needed \
+    base-devel cmake ninja qt6-base qt6-declarative qt6-wayland \
+    qt6-svg layer-shell-qt pipewire wireplumber ttf-dejavu
+WORKDIR /source

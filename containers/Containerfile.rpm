@@ -1,0 +1,6 @@
+FROM registry.fedoraproject.org/fedora:44
+RUN dnf install -y gcc-c++ cmake ninja-build qt6-qtbase-devel \
+    qt6-qtdeclarative-devel qt6-qtwayland-devel qt6-qtsvg-devel \
+    layer-shell-qt-devel pipewire-utils wireplumber rpm-build \
+    && dnf clean all
+WORKDIR /source

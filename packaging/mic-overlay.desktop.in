@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Microphone Overlay
+Comment=Microphone mute status overlay
+Exec="@MIC_OVERLAY_DESKTOP_EXECUTABLE@"
+Icon=mic-overlay
+Terminal=false
+Categories=AudioVideo;Audio;
+OnlyShowIn=KDE;
