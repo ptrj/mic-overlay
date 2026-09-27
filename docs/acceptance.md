@@ -33,7 +33,7 @@ ticks. Results are in `build-container/acceptance-idle/`. This test uses
 | Autostart checkbox | Desktop entry is created/removed | pending |
 | New KDE login | Enabled autostart launches one tray instance | passed — user, 2026-09-27 |
 | Normal/maximized windows | Overlay remains visible, without decorations | pending |
-| Alt+Tab/taskbar | Only the settings window appears, not the overlay | pending |
+| Alt+Tab/taskbar | Only the settings window appears, not the overlay | passed — user, 2026-09-27 |
 | Fullscreen browser/native application | Overlay remains above fullscreen content | pending |
 | Fullscreen games | Overlay remains visible and locked input reaches the game | passed — user, multiple games, 2026-09-27 |
 | Steam/Proton identification | Record whether tested games used Proton | not specified |
@@ -46,7 +46,9 @@ ticks. Results are in `build-container/acceptance-idle/`. This test uses
 
 The user confirmed correct dragging on 2026-09-26 and game, login/autostart and
 physical microphone tests on 2026-09-27. Game titles, native/Proton runtime and
-session duration were not specified. Monitor hotplug and mixed DPI remain open.
+session duration were not specified. The user also confirmed fullscreen/game
+input and the overlay's absence from Alt+Tab/taskbar on 2026-09-27. Monitor
+hotplug and mixed DPI remain open.
 
 Record date, application/game, fullscreen mode, monitors and observations.
 Isolated audio tests already cover virtual mute/default changes and restarts

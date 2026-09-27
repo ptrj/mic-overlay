@@ -10,6 +10,23 @@ Project: [ptrj/mic-overlay](https://github.com/ptrj/mic-overlay)
 
 Author: **ptrj** · Contact: **aur@dbs.sk** · License: **GPL-3.0-only**
 
+## Why this project exists
+
+I wanted to use Push to Talk in Discord/Vesktop while gaming, but I couldn't get
+it to work globally in my KDE Plasma Wayland setup. While looking for an
+alternative, I discovered Plasma's system-wide **Push to Talk** shortcut under
+**System Settings → Keyboard → Shortcuts → Audio Volume → Push to Talk**.
+
+That solved the global shortcut problem, but holding a key every time I wanted
+to speak wasn't always comfortable during a game. I switched to a shortcut for
+**Mute Microphone** instead, so I could toggle the microphone on and off with a
+single key press. I remapped **Caps Lock** to **F13** and assigned F13 to that
+shortcut, giving me an easy-to-reach key for muting and unmuting while gaming.
+
+The missing piece was a clear way to see whether my microphone was muted
+without leaving the game. That's why I created Microphone Overlay: a small,
+always-visible indicator of the actual system microphone state.
+
 ## Features
 
 - Red indicator when muted and green when the microphone is on.

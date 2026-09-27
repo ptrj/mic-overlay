@@ -10,7 +10,7 @@ Manual tests must be marked complete only after actual execution.
 - [x] LayerOverlay, no workspace reservation, no keyboard input.
 - [x] Locked overlay uses an empty mouse input region and no focus activation.
 - [x] Persistent Podman development container and native host launch.
-- [ ] Physical fullscreen/game input checks and absence from Alt+Tab/taskbar.
+- [x] Physical fullscreen/game input checks and absence from Alt+Tab/taskbar (user confirmed 2026-09-27).
 
 ## 2. P0 — Actual microphone state
 
@@ -79,12 +79,9 @@ Manual tests must be marked complete only after actual execution.
 
 ## 8. P3 — Optional extensions
 
-- [ ] Optional Ctrl+Alt+Shift + left-button drag activation outside Configure.
-- [ ] Optional right-button resize gesture with persisted size.
 - [ ] Native PipeWire API, all-monitor mode, external config live reload.
 - [ ] Optional transitions, theme integration, D-Bus status or explicit device selection.
 
-The requested Configure editing mode replaces the need for a drag shortcut in
-normal use. Global shortcut gestures remain optional and must preserve locked
-input behavior. V1 is not complete until manual fullscreen/input and startup
-acceptance checks have passed.
+The overlay is moved while Configure is open and remains locked during normal
+use. V1 is not complete until manual fullscreen/input and startup acceptance
+checks have passed.

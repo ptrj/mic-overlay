@@ -188,3 +188,10 @@ The original login sequence on physical hardware still needs user confirmation;
 virtual-source startup alone also worked before this fix. This release addresses
 the reproduced missed-device-event case without claiming the reported login
 failure has been reproduced on the host. Existing 0.2.1 packages predate this fix.
+
+### Physical fullscreen/game input and window-list acceptance (2026-09-27)
+
+The user confirmed that the overlay stays visible over fullscreen games, locked
+input reaches the game without focus stealing, and the overlay does not appear
+in Alt+Tab or the taskbar. The P0 acceptance item is complete based on this
+manual confirmation. Game titles, runtime and session duration remain unspecified.
