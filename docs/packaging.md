@@ -88,6 +88,29 @@ Submit only PKGBUILD and .SRCINFO, not binaries or archives. No publication is
 performed by these scripts. The source archive excludes build directories,
 local configuration, diagnostics and internal agent directories.
 
+## Published AUR package
+
+[mic-overlay](https://aur.archlinux.org/packages/mic-overlay) is maintained by
+ptrj. Version 0.2.2-1 was published on 2026-09-27 using the source archive from
+GitHub Release v0.2.2. The AUR repository contains only PKGBUILD and .SRCINFO.
+
+The publication checkout is `build-container/aur-mic-overlay/`. For future
+updates, publish the matching source archive first, update pkgver/pkgrel and the
+checksum in PKGBUILD, regenerate metadata, verify the build, and push to master:
+
+```bash
+makepkg --printsrcinfo > .SRCINFO
+git add PKGBUILD .SRCINFO
+git commit -m "Update mic-overlay"
+git push origin master
+```
+
+Initial publication was validated in a fresh Arch Podman container, downloading
+all dependencies and the public source archive. Source checksums, generated
+metadata and all four tests passed. Namcap found no errors after adding the
+hicolor-icon-theme runtime dependency. This is isolated container validation;
+a devtools chroot build remains a separate outstanding check.
+
 ## Installed-package checks
 
 ```bash

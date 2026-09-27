@@ -45,7 +45,8 @@ DEB and RPM builds are tested in Ubuntu 26.04 and Fedora 44 containers.
 
 ## Build and install
 
-On Arch/CachyOS:
+The [mic-overlay AUR package](https://aur.archlinux.org/packages/mic-overlay)
+is available for Arch/CachyOS. To build directly from this repository:
 
 ```bash
 sudo pacman -S --needed base-devel cmake ninja qt6-base qt6-declarative \

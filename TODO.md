@@ -63,6 +63,7 @@ Manual tests must be marked complete only after actual execution.
       startup; collect release artifacts and SHA-256 checksums.
 - [x] Author/maintainer ptrj and contact aur@dbs.sk.
 - [x] Public upstream URL: https://github.com/ptrj/mic-overlay.
+- [x] Publish mic-overlay 0.2.2-1 to AUR and validate in a fresh Arch container (2026-09-27).
 - [ ] Before publishing: upload and verify the versioned release archive and
       complete clean Arch chroot validation; aarch64 needs separate verification.
 
